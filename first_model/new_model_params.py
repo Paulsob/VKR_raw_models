@@ -2,6 +2,9 @@ import math
 import pandas as pd
 from datetime import datetime, timedelta
 
+"""сколько необходимо водителей на заданный объем работы при соблюдении заданных требований режима труда и отдыха"""
+
+
 shift1_start = "04:49"
 shift1_end = "13:36"
 
@@ -34,16 +37,13 @@ def time_duration(time_start, time_end):
     return round(end - start, 2)
 
 
-def calc_rest_required(shift_hours):
-    return max(12, 2 * shift_hours if shift_hours > 6 else 12)
-
 
 def check_schedule(start_time, work_hours):
     start = datetime.strptime(start_time, "%H:%M")
     end = start + timedelta(hours=float(work_hours))
     next_start = start + timedelta(days=1)
 
-    rest_required = calc_rest_required(work_hours)
+    rest_required = 12
     rest_actual = (next_start - end).total_seconds() / 3600
 
     if rest_actual >= rest_required:
