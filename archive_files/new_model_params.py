@@ -29,7 +29,7 @@ def time_to_hours(time_str):
     return h + m / 60
 
 
-def time_duration(time_start, time_end):
+def time_duration(start_time, time_end):
     start = time_to_hours(time_start)
     end = time_to_hours(time_end)
     if end < start:
