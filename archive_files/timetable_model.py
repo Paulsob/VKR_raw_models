@@ -1,6 +1,6 @@
 import pandas as pd
 
-file_path = "Timetable.xlsx"
+file_path = "../files/Timetable.xlsx"
 df = pd.read_excel(file_path, sheet_name="4х2")
 
 df.columns = ["0", "Таб.№", "График", "Режим", "см", "вых"] + [str(x) for x in range(1, 32)]

@@ -1,83 +1,134 @@
 from datetime import datetime, timedelta
 
-# --- Исходные данные ---
-time_start = "05:00"
-time_end = "23:00"
-interval = 5.4  # интервал между отправлениями из парка (в минутах)
-time_of_one_drive = 78  # одна сторона маршрута (в минутах)
-round_trip = time_of_one_drive * 2  # полный круг (в парк обратно)
+start_time = "04:48"
+end_time = "23:13"
+change_time = "12:48"
+interval = 5.4
+one_way_route_duration = 78
+min_norm_work = 6
+max_norm_work = 10
 
-# --- Преобразование времени ---
-time_start_obj = datetime.strptime(time_start, "%H:%M")
-time_end_obj = datetime.strptime(time_end, "%H:%M")
+total_route_duration = one_way_route_duration * 2
+form_start_time = datetime.strptime(start_time, "%H:%M")
+form_end_time = datetime.strptime(end_time, "%H:%M")
+form_change_time = datetime.strptime(change_time, "%H:%M")
 
-# --- Генерация расписания выездов ---
-list_of_drives = []
-t = time_start_obj
+if form_end_time <= form_start_time:
+    form_end_time += timedelta(days=1)
+
+list_of_schedule_drivers = []
+t = form_start_time
+driver_counter = 1
+
 while True:
-    end_potential = t + timedelta(minutes=round_trip)
-    if end_potential > time_end_obj:  # если водитель не успеет вернуться к 23:00
+    end_potential = t + timedelta(minutes=total_route_duration)
+    if end_potential > form_end_time:
         break
-    list_of_drives.append(t)
+    list_of_schedule_drivers.append({
+        "start_park": t,
+        "driver_id": None,
+        "shift": None
+    })
     t += timedelta(minutes=interval)
 
-# --- Моделирование ---
-drivers = []  # список [(время_освобождения, id)]
-next_id = 1
-assignments = []  # список всех рейсов с водителями
+first_change_list = []
+second_change_list = []
 
-for departure in list_of_drives:
-    # ищем, кто освободился к этому моменту
-    free_driver = None
-    for i, (free_time, driver_id) in enumerate(drivers):
-        if free_time <= departure:
-            free_driver = driver_id
-            drivers[i] = None
-            break
+for entry in list_of_schedule_drivers:
+    if entry["start_park"] < form_change_time:
+        entry["shift"] = 1
+        first_change_list.append(entry)
+    else:
+        entry["shift"] = 2
+        second_change_list.append(entry)
 
-    # если никто не освободился — новый водитель
-    if free_driver is None:
-        free_driver = next_id
-        next_id += 1
+def simulate_shift(departures, start_driver_id=1):
+    drivers = []
+    next_id = start_driver_id
+    assignments = []
 
-    # очистим список от None
-    drivers = [d for d in drivers if d is not None]
+    for entry in departures:
+        departure = entry["start_park"]
+        free_driver = None
+        for i, (free_time, driver_id) in enumerate(drivers):
+            if free_time < departure:
+                free_driver = driver_id
+                drivers[i] = None
+                break
+        if free_driver is None:
+            free_driver = next_id
+            next_id += 1
+        drivers = [d for d in drivers if d is not None]
+        arr_terminal = departure + timedelta(minutes=one_way_route_duration)
+        dep_terminal = arr_terminal + timedelta(minutes=2)
+        arr_park = dep_terminal + timedelta(minutes=one_way_route_duration)
+        drivers.append((arr_park, free_driver))
+        entry["driver_id"] = free_driver
+        assignments.append({
+            "id": free_driver,
+            "start_park": departure,
+            "end_terminal": arr_terminal,
+            "start_terminal": dep_terminal,
+            "end_park": arr_park
+        })
+    return assignments, next_id
 
-    # время маршрута
-    arr_terminal = departure + timedelta(minutes=time_of_one_drive)
-    dep_terminal = arr_terminal  # без простоев
-    arr_park = dep_terminal + timedelta(minutes=time_of_one_drive)
+assignments_change1, next_id = simulate_shift(first_change_list, start_driver_id=1)
+assignments_change2, _ = simulate_shift(second_change_list, start_driver_id=next_id)
 
-    # добавляем нового водителя с временем освобождения
-    drivers.append((arr_park, free_driver))
+work_time = {}
+for a in assignments_change1 + assignments_change2:
+    d = a["id"]
+    if d not in work_time:
+        work_time[d] = [a["start_park"], a["end_park"]]
+    else:
+        work_time[d][1] = a["end_park"]
 
-    # сохраняем информацию
-    assignments.append({
-        "id": free_driver,
-        "start_park": departure,
-        "end_terminal": arr_terminal,
-        "start_terminal": dep_terminal,
-        "end_park": arr_park
-    })
+num_drivers = max(person["id"] for person in assignments_change2)
+total_drives = len(assignments_change1) + len(assignments_change2)
+last_return_time = assignments_change2[-1]["end_park"].strftime("%H:%M")
 
-# --- Результат ---
-num_drivers = max(a["id"] for a in assignments)
+with open("../output_files/schedule.txt", "w", encoding="utf-8") as f:
+    last_return = {}
+    for i, a in enumerate(assignments_change1):
+        f.write(f"Рейс {i+1} (водитель {a['id']}, смена 1):\n")
+        if a["id"] in last_return:
+            prev = last_return[a["id"]]
+            diff = a["start_park"] - prev
+            f.write(f"  Предыдущий возврат:    {prev.strftime('%H:%M')}\n")
+            f.write(f"  Перерыв:               {int(diff.total_seconds()/60)} мин\n")
+        f.write(f"  Старт в парке:        {a['start_park'].strftime('%H:%M')}\n")
+        f.write(f"  Прибытие на конечную: {a['end_terminal'].strftime('%H:%M')}\n")
+        f.write(f"  Старт с конечной:     {a['start_terminal'].strftime('%H:%M')}\n")
+        f.write(f"  Возврат в парк:       {a['end_park'].strftime('%H:%M')}\n\n")
+        last_return[a["id"]] = a["end_park"]
+    f.write("\n=============ПЕРЕСМЕНКА==================\n\n\n")
+    last_return = {}
+    for i, a in enumerate(assignments_change2):
+        f.write(f"Рейс {i+1} (водитель {a['id']}, смена 2):\n")
+        if a["id"] in last_return:
+            prev = last_return[a["id"]]
+            diff = a["start_park"] - prev
+            f.write(f"  Предыдущий возврат:    {prev.strftime('%H:%M')}\n")
+            f.write(f"  Перерыв:               {int(diff.total_seconds()/60)} мин\n")
+        f.write(f"  Старт в парке:        {a['start_park'].strftime('%H:%M')}\n")
+        f.write(f"  Прибытие на конечную: {a['end_terminal'].strftime('%H:%M')}\n")
+        f.write(f"  Старт с конечной:     {a['start_terminal'].strftime('%H:%M')}\n")
+        f.write(f"  Возврат в парк:       {a['end_park'].strftime('%H:%M')}\n\n")
+        last_return[a["id"]] = a["end_park"]
+
 print(f"Необходимо водителей: {num_drivers}")
-print(f"Всего рейсов: {len(assignments)}")
+print(f"Всего рейсов: {total_drives}")
+print(f"Последний рейс возвращается в парк в: {last_return_time}")
 
-# --- Вывод ---
-last_return = None
-for i, a in enumerate(assignments):
-    print(f"\nРейс {i+1} (водитель {a['id']}):")
-    if last_return and a["id"] in last_return:
-        prev = last_return[a["id"]]
-        diff = a["start_park"] - prev
-        print(f"  Предыдущий возврат:   {prev.strftime('%H:%M')}  (перерыв {int(diff.total_seconds()/60)} мин)")
-    print("  Старт в парке:        ", a["start_park"].strftime("%H:%M"))
-    print("  Прибытие на конечную: ", a["end_terminal"].strftime("%H:%M"))
-    print("  Старт с конечной:     ", a["start_terminal"].strftime("%H:%M"))
-    print("  Возврат в парк:       ", a["end_park"].strftime("%H:%M"))
-    last_return = last_return or {}
-    last_return[a["id"]] = a["end_park"]
+with open("../output_files/worktime.txt", "w", encoding="utf-8") as f:
+    f.write("Время работы водителей:\n")
+    for d, (start, end) in work_time.items():
+        duration = (end - start).total_seconds() / 3600
+        if duration < min_norm_work:
+            f.write(f"  Водитель {d}: с {start.strftime('%H:%M')} до {end.strftime('%H:%M')} — {duration:.2f} ч - недоработка\n")
+        elif duration > max_norm_work:
+            f.write(f"  Водитель {d}: с {start.strftime('%H:%M')} до {end.strftime('%H:%M')} — {duration:.2f} ч - переработка\n")
+        else:
+            f.write(f"  Водитель {d}: с {start.strftime('%H:%M')} до {end.strftime('%H:%M')} — {duration:.2f} ч\n")
 
-print(f"\nПоследний рейс возвращается в парк в: {assignments[-1]['end_park'].strftime('%H:%M')}")
