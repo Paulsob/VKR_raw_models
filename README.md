@@ -25,8 +25,8 @@
 - минимальная и максимальная норма работы  
 
 **Выходные данные:**
-- полное расписание движения каждого трамвая — [`output_files/schedule.txt`](./output_files/schedule.txt)  
-- часы работы каждого водителя в конкретный день  
+- полное расписание движения каждого трамвая — [`output_files/schedule.txt`](timetable_and_another/output_files/schedule.txt)  
+- часы работы каждого водителя в конкретный день — [`output_files/worktime.txt`](timetable_and_another/output_files/worktime.txt)  
 
 ---
 
