@@ -88,7 +88,7 @@ num_drivers = max(person["id"] for person in assignments_change2)
 total_drives = len(assignments_change1) + len(assignments_change2)
 last_return_time = assignments_change2[-1]["end_park"].strftime("%H:%M")
 
-with open("../output_files/schedule.txt", "w", encoding="utf-8") as f:
+with open("output_files/schedule.txt", "w", encoding="utf-8") as f:
     last_return = {}
     for i, a in enumerate(assignments_change1):
         f.write(f"Рейс {i+1} (водитель {a['id']}, смена 1):\n")
@@ -121,7 +121,7 @@ print(f"Необходимо водителей: {num_drivers}")
 print(f"Всего рейсов: {total_drives}")
 print(f"Последний рейс возвращается в парк в: {last_return_time}")
 
-with open("../output_files/worktime.txt", "w", encoding="utf-8") as f:
+with open("output_files/worktime.txt", "w", encoding="utf-8") as f:
     f.write("Время работы водителей:\n")
     for d, (start, end) in work_time.items():
         duration = (end - start).total_seconds() / 3600
@@ -131,4 +131,3 @@ with open("../output_files/worktime.txt", "w", encoding="utf-8") as f:
             f.write(f"  Водитель {d}: с {start.strftime('%H:%M')} до {end.strftime('%H:%M')} — {duration:.2f} ч - переработка\n")
         else:
             f.write(f"  Водитель {d}: с {start.strftime('%H:%M')} до {end.strftime('%H:%M')} — {duration:.2f} ч\n")
-
