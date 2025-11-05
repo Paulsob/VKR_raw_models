@@ -81,7 +81,7 @@ def simulate_shift_optimized(departures, start_driver_id=1):
             drivers.remove(chosen)
 
         arr_terminal = departure + timedelta(minutes=one_way_route_duration)
-        dep_terminal = arr_terminal + timedelta(minutes=random.randint(1,3))
+        dep_terminal = arr_terminal + timedelta(minutes=random.randint(1, 3))
         arr_park = dep_terminal + timedelta(minutes=one_way_route_duration)
 
         total_hours = (arr_park - first_start).total_seconds() / 3600
@@ -118,9 +118,11 @@ for a in all_assignments:
 for d in assignments_by_driver:
     assignments_by_driver[d].sort(key=lambda x: x["start_park"])
 
+
 def total_hours(driver_id):
     rides = assignments_by_driver[driver_id]
     return (rides[-1]["end_park"] - rides[0]["start_park"]).total_seconds() / 3600
+
 
 underworked = [d for d in assignments_by_driver if total_hours(d) < min_norm_work]
 overworked = [d for d in assignments_by_driver if total_hours(d) > max_norm_work]
@@ -157,6 +159,7 @@ first_start_by_driver = {d: min(r["start_park"] for r in rides) for d, rides in 
 last_end_by_driver = {d: max(r["end_park"] for r in rides) for d, rides in assignments_by_driver.items()}
 work_time = {d: [first_start_by_driver[d], last_end_by_driver[d]] for d in assignments_by_driver.keys()}
 
+
 def check_min_norm_at_return(driver_id, return_time):
     first_start = first_start_by_driver.get(driver_id)
     if not first_start:
@@ -192,7 +195,8 @@ with open("output_files/schedule_one.txt", "w", encoding="utf-8") as f:
         if chk is not None:
             worked_hours, remaining = chk
             if worked_hours + 1e-9 < min_norm_work:
-                f.write(f"  На момент возврата: {worked_hours:.2f} ч — недоработка, требуется ещё {remaining:.2f} ч\n\n")
+                f.write(
+                    f"  На момент возврата: {worked_hours:.2f} ч — недоработка, требуется ещё {remaining:.2f} ч\n\n")
             else:
                 f.write(f"  На момент возврата: {worked_hours:.2f} ч — норма достигнута\n\n")
         last_return[a["id"]] = a["end_park"]
@@ -202,9 +206,13 @@ with open("output_files/worktime_one.txt", "w", encoding="utf-8") as f:
     for d in sorted(work_time.keys()):
         start, end = work_time[d]
         duration = (end - start).total_seconds() / 3600
+        next_start = (end + timedelta(hours=12)).strftime('%H:%M')
         if duration < min_norm_work:
-            f.write(f"  Водитель {d}: с {start.strftime('%H:%M')} до {end.strftime('%H:%M')} — {duration:.2f} ч - недоработка\n")
+            f.write(
+                f"  Водитель {d}: с {start.strftime('%H:%M')} до {end.strftime('%H:%M')} — {duration:.2f} ч - недоработка. \t\t Сможет выйти на работу с {next_start}\n")
         elif duration > max_norm_work:
-            f.write(f"  Водитель {d}: с {start.strftime('%H:%M')} до {end.strftime('%H:%M')} — {duration:.2f} ч - переработка\n")
+            f.write(
+                f"  Водитель {d}: с {start.strftime('%H:%M')} до {end.strftime('%H:%M')} — {duration:.2f} ч - переработка. Сможет выйти на работу с {next_start}\n")
         else:
-            f.write(f"  Водитель {d}: с {start.strftime('%H:%M')} до {end.strftime('%H:%M')} — {duration:.2f} ч\n")
+            f.write(
+                f"  Водитель {d}: с {start.strftime('%H:%M')} до {end.strftime('%H:%M')} — {duration:.2f} ч \t\t\t\t\t\t Сможет выйти на работу с {next_start}\n")
