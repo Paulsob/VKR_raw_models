@@ -1,7 +1,6 @@
 from datetime import datetime, timedelta
 import random
 
-# --- Исходные данные ---
 start_time = "04:48"
 end_time = "01:34"
 change_time = "12:48"
@@ -10,7 +9,6 @@ min_norm_work = 6
 max_norm_work = 10
 intervals_by_time = [[4, 13], [8, 5], [10, 10], [17, 5], [20, 12], [23, 18]]
 
-# --- Предварительные вычисления ---
 # полный круг (туда-обратно + 2 мин на манёвр)
 total_route_duration = one_way_route_duration * 2 + 2
 
@@ -26,7 +24,6 @@ t = form_start_time
 
 
 def get_interval_for_time(t):
-    """Возвращает интервал (минут между отправлениями) в зависимости от текущего часа"""
     hour = t.hour + t.minute / 60
     for i, (start_hour, interval_val) in enumerate(intervals_by_time):
         if i == len(intervals_by_time) - 1 or hour < intervals_by_time[i + 1][0]:
@@ -34,7 +31,6 @@ def get_interval_for_time(t):
     return intervals_by_time[-1][1]
 
 
-# --- Формируем расписание отправлений ---
 while True:
     end_potential = t + timedelta(minutes=total_route_duration)
     if end_potential > form_end_time:
@@ -49,13 +45,7 @@ while True:
     t += timedelta(minutes=current_interval)
 
 
-# --- Новый оптимизированный симулятор назначения водителей ---
 def simulate_with_chaining(departures, start_driver_id=1, min_norm_work=min_norm_work, max_norm_work=max_norm_work):
-    """
-    Greedy-алгоритм:
-      - старается дозагружать существующих водителей, не превышая max_norm
-      - при создании нового водителя формирует ему цепочку рейсов, чтобы достичь min_norm
-    """
     departures = sorted(departures, key=lambda x: x["start_park"])
     n = len(departures)
     assigned = [False] * n
@@ -73,7 +63,6 @@ def simulate_with_chaining(departures, start_driver_id=1, min_norm_work=min_norm
         entry = departures[i]
         departure = entry["start_park"]
 
-        # --- ищем доступных водителей ---
         available = []
         for d in drivers:
             time_free, drv_id, first_start, total_hours = d
@@ -110,7 +99,6 @@ def simulate_with_chaining(departures, start_driver_id=1, min_norm_work=min_norm
             i += 1
             continue
 
-        # --- создаём нового водителя и набиваем ему смену цепочкой ---
         free_driver = next_id
         next_id += 1
         first_start = departure
@@ -168,10 +156,8 @@ def simulate_with_chaining(departures, start_driver_id=1, min_norm_work=min_norm
     return assignments, next_id
 
 
-# --- Запуск симуляции ---
 assignments_all, _ = simulate_with_chaining(list_of_schedule_drivers, start_driver_id=1)
 
-# --- Формируем сводные данные ---
 all_assignments = sorted(assignments_all, key=lambda x: x["start_park"])
 first_start_by_driver = {}
 last_end_by_driver = {}
@@ -194,7 +180,6 @@ def check_min_norm_at_return(driver_id, return_time):
     return worked_hours, remaining
 
 
-# --- Итоговые статистики ---
 all_ids = [a["id"] for a in all_assignments]
 num_drivers = len(set(all_ids))
 total_drives = len(all_assignments)
@@ -204,7 +189,6 @@ print(f"Необходимо водителей: {num_drivers}")
 print(f"Всего рейсов: {total_drives}")
 print(f"Последний рейс возвращается в парк в: {last_return_time}")
 
-# --- Запись расписания ---
 with open("output_files/schedule_two.txt", "w", encoding="utf-8") as f:
     last_return = {}
     for i, a in enumerate(all_assignments):
@@ -227,7 +211,6 @@ with open("output_files/schedule_two.txt", "w", encoding="utf-8") as f:
                 f.write(f"  На момент возврата: {worked_hours:.2f} ч — норма достигнута\n\n")
         last_return[a["id"]] = a["end_park"]
 
-# --- Файл с итоговым временем работы ---
 with open("output_files/worktime_two.txt", "w", encoding="utf-8") as f:
     f.write("Время работы водителей:\n")
     for d in sorted(work_time.keys()):
