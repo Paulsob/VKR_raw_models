@@ -3,7 +3,7 @@ import random
 
 # --- Исходные данные ---
 start_time = "04:48"
-end_time = "23:13"
+end_time = "01:34"
 change_time = "12:48"
 one_way_route_duration = random.randint(76, 80)
 min_norm_work = 6

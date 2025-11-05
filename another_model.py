@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 
 start_time = "04:48"
-end_time = "23:13"
+end_time = "01:34"
 change_time = "12:48"
 interval = 5.4
 one_way_route_duration = 78
