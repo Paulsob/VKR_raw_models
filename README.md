@@ -26,7 +26,7 @@
 
 **Выходные данные:**
 - полное расписание движения каждого трамвая — [`output_files/schedule.txt`](./output_files/schedule.txt)  
-- график работы каждого водителя в конкретный день  
+- часы работы каждого водителя в конкретный день  
 
 ---
 
@@ -51,8 +51,8 @@
 - минимальная и максимальная норма работы  
 
 **Выходные данные:**
-- полное расписание движения каждого трамвая — [`another_model_one/output_files/schedule.txt`](./another_model_one/output_files/schedule.txt)  
-- график работы каждого водителя в конкретный день  
+- полное расписание движения каждого трамвая — [`another_model_one/output_files/schedule_one.txt`](./another_model_one/output_files/schedule_one.txt)  
+- часы работы каждого водителя в конкретный день — [`another_model_one/output_files/worktime_one.txt`](./another_model_one/output_files/worktime_one.txt) 
 
 ---
 
@@ -73,8 +73,8 @@
 - минимальная и максимальная норма работы  
 
 **Выходные данные:**
-- полное расписание движения каждого трамвая — [`another_model_two/output_files/schedule.txt`](./another_model_two/output_files/schedule.txt)  
-- график работы каждого водителя в конкретный день  
+- полное расписание движения каждого трамвая — [`another_model_two/output_files/schedule_two.txt`](./another_model_two/output_files/schedule_two.txt)  
+- часы работы каждого водителя в конкретный день — [`another_model_two/output_files/worktime_two.txt`](./another_model_two/output_files/worktime_two.txt)  
 
 ---
 
