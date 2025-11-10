@@ -9,13 +9,13 @@
  - [files/Timetable.xlsx](./files/Timetable.xlsx) - график работы водителей на месяц с пропусками (для модели timetable_model.py)
 ---
 
-## Модель 1 — [another_model.py](timetable_and_another/another_model.py)
+## Модель 1 — [another_model.py](archive/timetable_and_another/another_model.py)
 
 **Описание:**  
 Модель с **постоянным интервалом** между отправлениями (5.4 минуты).
 
 **Расположение:**  
-[`another_model.py`](timetable_and_another/another_model.py)
+[`another_model.py`](archive/timetable_and_another/another_model.py)
 
 **Входные данные:**
 - время работы всей линии  
@@ -25,8 +25,8 @@
 - минимальная и максимальная норма работы  
 
 **Выходные данные:**
-- полное расписание движения каждого трамвая — [`output_files/schedule.txt`](timetable_and_another/output_files/schedule.txt)  
-- часы работы каждого водителя в конкретный день — [`output_files/worktime.txt`](timetable_and_another/output_files/worktime.txt)  
+- полное расписание движения каждого трамвая — [`output_files/schedule.txt`](archive/timetable_and_another/output_files/schedule.txt)  
+- часы работы каждого водителя в конкретный день — [`output_files/worktime.txt`](archive/timetable_and_another/output_files/worktime.txt)  
 
 ---
 
@@ -56,14 +56,14 @@
 
 ---
 
-## Модель 3 — [another_model_two/another_model_two.py](./another_model_two/another_model_two.py)
+## Модель 3 — [another_model_two/another_model_two.py](archive/another_model_two/another_model_two.py)
 
 **Описание:**  
 Модель аналогична предыдущей (another_model_one), но использует **другой алгоритм назначения водителей**.  
 Применяется как **запасной вариант** при тех же входных параметрах.  
 
 **Расположение:**  
-[`another_model_two/another_model_two.py`](./another_model_two/another_model_two.py)
+[`another_model_two/another_model_two.py`](archive/another_model_two/another_model_two.py)
 
 **Входные данные:**
 - время работы всей линии  
@@ -73,8 +73,8 @@
 - минимальная и максимальная норма работы  
 
 **Выходные данные:**
-- полное расписание движения каждого трамвая — [`another_model_two/output_files/schedule_two.txt`](./another_model_two/output_files/schedule_two.txt)  
-- часы работы каждого водителя в конкретный день — [`another_model_two/output_files/worktime_two.txt`](./another_model_two/output_files/worktime_two.txt)  
+- полное расписание движения каждого трамвая — [`another_model_two/output_files/schedule_two.txt`](archive/another_model_two/output_files/schedule_two.txt)  
+- часы работы каждого водителя в конкретный день — [`another_model_two/output_files/worktime_two.txt`](archive/another_model_two/output_files/worktime_two.txt)  
 
 ---
 
@@ -85,7 +85,7 @@
 Пропуски, появившиеся в графике, заполняются автоматически, используя водителей из резерва.
 
 **Расположение:**  
-[timetable_and_another/timetable_model.py](./timetable_and_another/timetable_model.py)
+[timetable_and_another/timetable_model.py](archive/timetable_and_another/timetable_model.py)
 
 **Входные данные:**  
 - таблица расписания графиков работы водителей на один календарный месяц

@@ -1,0 +1,1578 @@
+{
+  "num_drivers": 51,
+  "total_drives": 110,
+  "last_return_time": "01:40",
+  "schedule": [
+    {
+      "trip_number": 1,
+      "driver_id": 1,
+      "start_park": "04:48",
+      "arrival_terminal": "06:06",
+      "start_terminal": "06:08",
+      "return_park": "07:26",
+      "accumulated_hours": "02:38",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 2,
+      "driver_id": 2,
+      "start_park": "05:03",
+      "arrival_terminal": "06:23",
+      "start_terminal": "06:25",
+      "return_park": "07:45",
+      "accumulated_hours": "02:42",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 3,
+      "driver_id": 3,
+      "start_park": "05:18",
+      "arrival_terminal": "06:36",
+      "start_terminal": "06:38",
+      "return_park": "07:56",
+      "accumulated_hours": "02:38",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 4,
+      "driver_id": 4,
+      "start_park": "05:33",
+      "arrival_terminal": "06:49",
+      "start_terminal": "06:51",
+      "return_park": "08:07",
+      "accumulated_hours": "02:34",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 5,
+      "driver_id": 5,
+      "start_park": "05:48",
+      "arrival_terminal": "07:07",
+      "start_terminal": "07:08",
+      "return_park": "08:27",
+      "accumulated_hours": "02:38",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 6,
+      "driver_id": 6,
+      "start_park": "06:03",
+      "arrival_terminal": "07:20",
+      "start_terminal": "07:21",
+      "return_park": "08:38",
+      "accumulated_hours": "02:35",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 7,
+      "driver_id": 7,
+      "start_park": "06:18",
+      "arrival_terminal": "07:38",
+      "start_terminal": "07:40",
+      "return_park": "09:00",
+      "accumulated_hours": "02:42",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 8,
+      "driver_id": 8,
+      "start_park": "06:33",
+      "arrival_terminal": "07:50",
+      "start_terminal": "07:52",
+      "return_park": "09:09",
+      "accumulated_hours": "02:36",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 9,
+      "driver_id": 9,
+      "start_park": "06:48",
+      "arrival_terminal": "08:06",
+      "start_terminal": "08:08",
+      "return_park": "09:26",
+      "accumulated_hours": "02:38",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 10,
+      "driver_id": 10,
+      "start_park": "07:03",
+      "arrival_terminal": "08:19",
+      "start_terminal": "08:20",
+      "return_park": "09:36",
+      "accumulated_hours": "02:32",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 11,
+      "driver_id": 11,
+      "start_park": "07:18",
+      "arrival_terminal": "08:35",
+      "start_terminal": "08:36",
+      "return_park": "09:53",
+      "accumulated_hours": "02:35",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 12,
+      "driver_id": 1,
+      "start_park": "07:33",
+      "arrival_terminal": "08:53",
+      "start_terminal": "08:54",
+      "return_park": "10:14",
+      "accumulated_hours": "05:26",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 13,
+      "driver_id": 2,
+      "start_park": "07:48",
+      "arrival_terminal": "09:08",
+      "start_terminal": "09:10",
+      "return_park": "10:30",
+      "accumulated_hours": "05:27",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 14,
+      "driver_id": 3,
+      "start_park": "08:03",
+      "arrival_terminal": "09:20",
+      "start_terminal": "09:21",
+      "return_park": "10:38",
+      "accumulated_hours": "05:19",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 15,
+      "driver_id": 4,
+      "start_park": "08:09",
+      "arrival_terminal": "09:26",
+      "start_terminal": "09:29",
+      "return_park": "10:46",
+      "accumulated_hours": "05:13",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 16,
+      "driver_id": 12,
+      "start_park": "08:15",
+      "arrival_terminal": "09:31",
+      "start_terminal": "09:32",
+      "return_park": "10:48",
+      "accumulated_hours": "02:32",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 17,
+      "driver_id": 13,
+      "start_park": "08:21",
+      "arrival_terminal": "09:41",
+      "start_terminal": "09:43",
+      "return_park": "11:03",
+      "accumulated_hours": "02:42",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 18,
+      "driver_id": 5,
+      "start_park": "08:27",
+      "arrival_terminal": "09:43",
+      "start_terminal": "09:45",
+      "return_park": "11:01",
+      "accumulated_hours": "05:13",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 19,
+      "driver_id": 14,
+      "start_park": "08:33",
+      "arrival_terminal": "09:50",
+      "start_terminal": "09:51",
+      "return_park": "11:08",
+      "accumulated_hours": "02:35",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 20,
+      "driver_id": 6,
+      "start_park": "08:39",
+      "arrival_terminal": "09:56",
+      "start_terminal": "09:59",
+      "return_park": "11:16",
+      "accumulated_hours": "05:13",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 21,
+      "driver_id": 15,
+      "start_park": "08:45",
+      "arrival_terminal": "10:01",
+      "start_terminal": "10:02",
+      "return_park": "11:18",
+      "accumulated_hours": "02:32",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 22,
+      "driver_id": 16,
+      "start_park": "08:51",
+      "arrival_terminal": "10:08",
+      "start_terminal": "10:10",
+      "return_park": "11:27",
+      "accumulated_hours": "02:36",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 23,
+      "driver_id": 17,
+      "start_park": "08:57",
+      "arrival_terminal": "10:17",
+      "start_terminal": "10:20",
+      "return_park": "11:40",
+      "accumulated_hours": "02:43",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 24,
+      "driver_id": 7,
+      "start_park": "09:03",
+      "arrival_terminal": "10:20",
+      "start_terminal": "10:23",
+      "return_park": "11:40",
+      "accumulated_hours": "05:21",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 25,
+      "driver_id": 8,
+      "start_park": "09:09",
+      "arrival_terminal": "10:29",
+      "start_terminal": "10:32",
+      "return_park": "11:52",
+      "accumulated_hours": "05:18",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 26,
+      "driver_id": 18,
+      "start_park": "09:15",
+      "arrival_terminal": "10:35",
+      "start_terminal": "10:38",
+      "return_park": "11:58",
+      "accumulated_hours": "02:43",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 27,
+      "driver_id": 19,
+      "start_park": "09:21",
+      "arrival_terminal": "10:40",
+      "start_terminal": "10:41",
+      "return_park": "12:00",
+      "accumulated_hours": "02:38",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 28,
+      "driver_id": 9,
+      "start_park": "09:27",
+      "arrival_terminal": "10:45",
+      "start_terminal": "10:48",
+      "return_park": "12:06",
+      "accumulated_hours": "05:17",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 29,
+      "driver_id": 20,
+      "start_park": "09:33",
+      "arrival_terminal": "10:52",
+      "start_terminal": "10:53",
+      "return_park": "12:12",
+      "accumulated_hours": "02:38",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 30,
+      "driver_id": 10,
+      "start_park": "09:39",
+      "arrival_terminal": "10:56",
+      "start_terminal": "10:59",
+      "return_park": "12:16",
+      "accumulated_hours": "05:13",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 31,
+      "driver_id": 21,
+      "start_park": "09:45",
+      "arrival_terminal": "11:01",
+      "start_terminal": "11:04",
+      "return_park": "12:20",
+      "accumulated_hours": "02:35",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 32,
+      "driver_id": 22,
+      "start_park": "09:51",
+      "arrival_terminal": "11:10",
+      "start_terminal": "11:11",
+      "return_park": "12:30",
+      "accumulated_hours": "02:38",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 33,
+      "driver_id": 11,
+      "start_park": "09:57",
+      "arrival_terminal": "11:14",
+      "start_terminal": "11:15",
+      "return_park": "12:32",
+      "accumulated_hours": "05:14",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 34,
+      "driver_id": 23,
+      "start_park": "10:03",
+      "arrival_terminal": "11:22",
+      "start_terminal": "11:24",
+      "return_park": "12:43",
+      "accumulated_hours": "02:39",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 35,
+      "driver_id": 1,
+      "start_park": "10:16",
+      "arrival_terminal": "11:34",
+      "start_terminal": "11:36",
+      "return_park": "12:54",
+      "accumulated_hours": "08:05",
+      "norm_achieved": "норма достигнута"
+    },
+    {
+      "trip_number": 36,
+      "driver_id": 24,
+      "start_park": "10:29",
+      "arrival_terminal": "11:46",
+      "start_terminal": "11:48",
+      "return_park": "13:05",
+      "accumulated_hours": "02:36",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 37,
+      "driver_id": 2,
+      "start_park": "10:42",
+      "arrival_terminal": "11:58",
+      "start_terminal": "11:59",
+      "return_park": "13:15",
+      "accumulated_hours": "08:11",
+      "norm_achieved": "норма достигнута"
+    },
+    {
+      "trip_number": 38,
+      "driver_id": 3,
+      "start_park": "10:55",
+      "arrival_terminal": "12:11",
+      "start_terminal": "12:14",
+      "return_park": "13:30",
+      "accumulated_hours": "08:11",
+      "norm_achieved": "норма достигнута"
+    },
+    {
+      "trip_number": 39,
+      "driver_id": 5,
+      "start_park": "11:08",
+      "arrival_terminal": "12:25",
+      "start_terminal": "12:26",
+      "return_park": "13:43",
+      "accumulated_hours": "07:55",
+      "norm_achieved": "норма достигнута"
+    },
+    {
+      "trip_number": 40,
+      "driver_id": 6,
+      "start_park": "11:21",
+      "arrival_terminal": "12:37",
+      "start_terminal": "12:39",
+      "return_park": "13:55",
+      "accumulated_hours": "07:51",
+      "norm_achieved": "норма достигнута"
+    },
+    {
+      "trip_number": 41,
+      "driver_id": 4,
+      "start_park": "11:34",
+      "arrival_terminal": "12:53",
+      "start_terminal": "12:54",
+      "return_park": "14:13",
+      "accumulated_hours": "08:39",
+      "norm_achieved": "норма достигнута"
+    },
+    {
+      "trip_number": 42,
+      "driver_id": 7,
+      "start_park": "11:47",
+      "arrival_terminal": "13:07",
+      "start_terminal": "13:10",
+      "return_park": "14:30",
+      "accumulated_hours": "08:11",
+      "norm_achieved": "норма достигнута"
+    },
+    {
+      "trip_number": 43,
+      "driver_id": 8,
+      "start_park": "12:00",
+      "arrival_terminal": "13:19",
+      "start_terminal": "13:20",
+      "return_park": "14:39",
+      "accumulated_hours": "08:05",
+      "norm_achieved": "норма достигнута"
+    },
+    {
+      "trip_number": 44,
+      "driver_id": 9,
+      "start_park": "12:13",
+      "arrival_terminal": "13:31",
+      "start_terminal": "13:32",
+      "return_park": "14:50",
+      "accumulated_hours": "08:01",
+      "norm_achieved": "норма достигнута"
+    },
+    {
+      "trip_number": 45,
+      "driver_id": 10,
+      "start_park": "12:26",
+      "arrival_terminal": "13:46",
+      "start_terminal": "13:48",
+      "return_park": "15:08",
+      "accumulated_hours": "08:05",
+      "norm_achieved": "норма достигнута"
+    },
+    {
+      "trip_number": 46,
+      "driver_id": 11,
+      "start_park": "12:39",
+      "arrival_terminal": "13:56",
+      "start_terminal": "13:59",
+      "return_park": "15:16",
+      "accumulated_hours": "07:58",
+      "norm_achieved": "норма достигнута"
+    },
+    {
+      "trip_number": 47,
+      "driver_id": 18,
+      "start_park": "12:52",
+      "arrival_terminal": "14:11",
+      "start_terminal": "14:14",
+      "return_park": "15:33",
+      "accumulated_hours": "06:17",
+      "norm_achieved": "норма достигнута"
+    },
+    {
+      "trip_number": 48,
+      "driver_id": 12,
+      "start_park": "13:05",
+      "arrival_terminal": "14:24",
+      "start_terminal": "14:25",
+      "return_park": "15:44",
+      "accumulated_hours": "07:29",
+      "norm_achieved": "норма достигнута"
+    },
+    {
+      "trip_number": 49,
+      "driver_id": 13,
+      "start_park": "13:18",
+      "arrival_terminal": "14:36",
+      "start_terminal": "14:38",
+      "return_park": "15:56",
+      "accumulated_hours": "07:34",
+      "norm_achieved": "норма достигнута"
+    },
+    {
+      "trip_number": 50,
+      "driver_id": 14,
+      "start_park": "13:31",
+      "arrival_terminal": "14:51",
+      "start_terminal": "14:53",
+      "return_park": "16:13",
+      "accumulated_hours": "07:40",
+      "norm_achieved": "норма достигнута"
+    },
+    {
+      "trip_number": 51,
+      "driver_id": 25,
+      "start_park": "13:44",
+      "arrival_terminal": "15:02",
+      "start_terminal": "15:05",
+      "return_park": "16:23",
+      "accumulated_hours": "02:38",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 52,
+      "driver_id": 26,
+      "start_park": "13:57",
+      "arrival_terminal": "15:16",
+      "start_terminal": "15:17",
+      "return_park": "16:36",
+      "accumulated_hours": "02:38",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 53,
+      "driver_id": 27,
+      "start_park": "14:10",
+      "arrival_terminal": "15:30",
+      "start_terminal": "15:33",
+      "return_park": "16:53",
+      "accumulated_hours": "02:43",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 54,
+      "driver_id": 28,
+      "start_park": "14:23",
+      "arrival_terminal": "15:42",
+      "start_terminal": "15:43",
+      "return_park": "17:02",
+      "accumulated_hours": "02:38",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 55,
+      "driver_id": 29,
+      "start_park": "14:36",
+      "arrival_terminal": "15:53",
+      "start_terminal": "15:56",
+      "return_park": "17:13",
+      "accumulated_hours": "02:37",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 56,
+      "driver_id": 30,
+      "start_park": "14:49",
+      "arrival_terminal": "16:06",
+      "start_terminal": "16:07",
+      "return_park": "17:24",
+      "accumulated_hours": "02:35",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 57,
+      "driver_id": 31,
+      "start_park": "15:02",
+      "arrival_terminal": "16:20",
+      "start_terminal": "16:21",
+      "return_park": "17:39",
+      "accumulated_hours": "02:37",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 58,
+      "driver_id": 32,
+      "start_park": "15:15",
+      "arrival_terminal": "16:34",
+      "start_terminal": "16:36",
+      "return_park": "17:55",
+      "accumulated_hours": "02:39",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 59,
+      "driver_id": 33,
+      "start_park": "15:28",
+      "arrival_terminal": "16:48",
+      "start_terminal": "16:50",
+      "return_park": "18:10",
+      "accumulated_hours": "02:42",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 60,
+      "driver_id": 34,
+      "start_park": "15:41",
+      "arrival_terminal": "16:58",
+      "start_terminal": "17:01",
+      "return_park": "18:18",
+      "accumulated_hours": "02:37",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 61,
+      "driver_id": 35,
+      "start_park": "15:54",
+      "arrival_terminal": "17:13",
+      "start_terminal": "17:14",
+      "return_park": "18:33",
+      "accumulated_hours": "02:38",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 62,
+      "driver_id": 36,
+      "start_park": "16:07",
+      "arrival_terminal": "17:27",
+      "start_terminal": "17:30",
+      "return_park": "18:50",
+      "accumulated_hours": "02:43",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 63,
+      "driver_id": 37,
+      "start_park": "16:20",
+      "arrival_terminal": "17:36",
+      "start_terminal": "17:37",
+      "return_park": "18:53",
+      "accumulated_hours": "02:32",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 64,
+      "driver_id": 25,
+      "start_park": "16:33",
+      "arrival_terminal": "17:52",
+      "start_terminal": "17:54",
+      "return_park": "19:13",
+      "accumulated_hours": "05:29",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 65,
+      "driver_id": 26,
+      "start_park": "16:46",
+      "arrival_terminal": "18:06",
+      "start_terminal": "18:09",
+      "return_park": "19:29",
+      "accumulated_hours": "05:31",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 66,
+      "driver_id": 27,
+      "start_park": "16:59",
+      "arrival_terminal": "18:17",
+      "start_terminal": "18:20",
+      "return_park": "19:38",
+      "accumulated_hours": "05:28",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 67,
+      "driver_id": 28,
+      "start_park": "17:12",
+      "arrival_terminal": "18:28",
+      "start_terminal": "18:30",
+      "return_park": "19:46",
+      "accumulated_hours": "05:23",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 68,
+      "driver_id": 29,
+      "start_park": "17:18",
+      "arrival_terminal": "18:37",
+      "start_terminal": "18:39",
+      "return_park": "19:58",
+      "accumulated_hours": "05:21",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 69,
+      "driver_id": 30,
+      "start_park": "17:24",
+      "arrival_terminal": "18:44",
+      "start_terminal": "18:46",
+      "return_park": "20:06",
+      "accumulated_hours": "05:16",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 70,
+      "driver_id": 38,
+      "start_park": "17:30",
+      "arrival_terminal": "18:49",
+      "start_terminal": "18:51",
+      "return_park": "20:10",
+      "accumulated_hours": "02:39",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 71,
+      "driver_id": 39,
+      "start_park": "17:36",
+      "arrival_terminal": "18:53",
+      "start_terminal": "18:55",
+      "return_park": "20:12",
+      "accumulated_hours": "02:36",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 72,
+      "driver_id": 31,
+      "start_park": "17:42",
+      "arrival_terminal": "19:01",
+      "start_terminal": "19:03",
+      "return_park": "20:22",
+      "accumulated_hours": "05:19",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 73,
+      "driver_id": 40,
+      "start_park": "17:48",
+      "arrival_terminal": "19:05",
+      "start_terminal": "19:08",
+      "return_park": "20:25",
+      "accumulated_hours": "02:37",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 74,
+      "driver_id": 41,
+      "start_park": "17:54",
+      "arrival_terminal": "19:11",
+      "start_terminal": "19:13",
+      "return_park": "20:30",
+      "accumulated_hours": "02:36",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 75,
+      "driver_id": 32,
+      "start_park": "18:00",
+      "arrival_terminal": "19:19",
+      "start_terminal": "19:21",
+      "return_park": "20:40",
+      "accumulated_hours": "05:25",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 76,
+      "driver_id": 42,
+      "start_park": "18:06",
+      "arrival_terminal": "19:23",
+      "start_terminal": "19:24",
+      "return_park": "20:41",
+      "accumulated_hours": "02:35",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 77,
+      "driver_id": 33,
+      "start_park": "18:12",
+      "arrival_terminal": "19:30",
+      "start_terminal": "19:33",
+      "return_park": "20:51",
+      "accumulated_hours": "05:23",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 78,
+      "driver_id": 34,
+      "start_park": "18:18",
+      "arrival_terminal": "19:38",
+      "start_terminal": "19:41",
+      "return_park": "21:01",
+      "accumulated_hours": "05:19",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 79,
+      "driver_id": 43,
+      "start_park": "18:24",
+      "arrival_terminal": "19:44",
+      "start_terminal": "19:46",
+      "return_park": "21:06",
+      "accumulated_hours": "02:42",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 80,
+      "driver_id": 44,
+      "start_park": "18:30",
+      "arrival_terminal": "19:48",
+      "start_terminal": "19:50",
+      "return_park": "21:08",
+      "accumulated_hours": "02:38",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 81,
+      "driver_id": 35,
+      "start_park": "18:36",
+      "arrival_terminal": "19:55",
+      "start_terminal": "19:56",
+      "return_park": "21:15",
+      "accumulated_hours": "05:20",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 82,
+      "driver_id": 45,
+      "start_park": "18:42",
+      "arrival_terminal": "19:58",
+      "start_terminal": "19:59",
+      "return_park": "21:15",
+      "accumulated_hours": "02:32",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 83,
+      "driver_id": 46,
+      "start_park": "18:48",
+      "arrival_terminal": "20:04",
+      "start_terminal": "20:06",
+      "return_park": "21:22",
+      "accumulated_hours": "02:34",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 84,
+      "driver_id": 36,
+      "start_park": "18:54",
+      "arrival_terminal": "20:14",
+      "start_terminal": "20:16",
+      "return_park": "21:36",
+      "accumulated_hours": "05:29",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 85,
+      "driver_id": 37,
+      "start_park": "19:00",
+      "arrival_terminal": "20:16",
+      "start_terminal": "20:19",
+      "return_park": "21:35",
+      "accumulated_hours": "05:15",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 86,
+      "driver_id": 47,
+      "start_park": "19:06",
+      "arrival_terminal": "20:23",
+      "start_terminal": "20:24",
+      "return_park": "21:41",
+      "accumulated_hours": "02:35",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 87,
+      "driver_id": 48,
+      "start_park": "19:12",
+      "arrival_terminal": "20:30",
+      "start_terminal": "20:32",
+      "return_park": "21:50",
+      "accumulated_hours": "02:38",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 88,
+      "driver_id": 25,
+      "start_park": "19:18",
+      "arrival_terminal": "20:35",
+      "start_terminal": "20:38",
+      "return_park": "21:55",
+      "accumulated_hours": "08:11",
+      "norm_achieved": "норма достигнута"
+    },
+    {
+      "trip_number": 89,
+      "driver_id": 49,
+      "start_park": "19:24",
+      "arrival_terminal": "20:42",
+      "start_terminal": "20:44",
+      "return_park": "22:02",
+      "accumulated_hours": "02:38",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 90,
+      "driver_id": 26,
+      "start_park": "19:30",
+      "arrival_terminal": "20:46",
+      "start_terminal": "20:49",
+      "return_park": "22:05",
+      "accumulated_hours": "08:07",
+      "norm_achieved": "норма достигнута"
+    },
+    {
+      "trip_number": 91,
+      "driver_id": 50,
+      "start_park": "19:36",
+      "arrival_terminal": "20:56",
+      "start_terminal": "20:57",
+      "return_park": "22:17",
+      "accumulated_hours": "02:40",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 92,
+      "driver_id": 27,
+      "start_park": "19:42",
+      "arrival_terminal": "21:01",
+      "start_terminal": "21:02",
+      "return_park": "22:21",
+      "accumulated_hours": "08:11",
+      "norm_achieved": "норма достигнута"
+    },
+    {
+      "trip_number": 93,
+      "driver_id": 28,
+      "start_park": "19:48",
+      "arrival_terminal": "21:05",
+      "start_terminal": "21:06",
+      "return_park": "22:23",
+      "accumulated_hours": "08:00",
+      "norm_achieved": "норма достигнута"
+    },
+    {
+      "trip_number": 94,
+      "driver_id": 51,
+      "start_park": "19:54",
+      "arrival_terminal": "21:10",
+      "start_terminal": "21:12",
+      "return_park": "22:28",
+      "accumulated_hours": "02:34",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 95,
+      "driver_id": 29,
+      "start_park": "20:00",
+      "arrival_terminal": "21:19",
+      "start_terminal": "21:22",
+      "return_park": "22:41",
+      "accumulated_hours": "08:05",
+      "norm_achieved": "норма достигнута"
+    },
+    {
+      "trip_number": 96,
+      "driver_id": 30,
+      "start_park": "20:12",
+      "arrival_terminal": "21:28",
+      "start_terminal": "21:30",
+      "return_park": "22:46",
+      "accumulated_hours": "07:57",
+      "norm_achieved": "норма достигнута"
+    },
+    {
+      "trip_number": 97,
+      "driver_id": 31,
+      "start_park": "20:24",
+      "arrival_terminal": "21:42",
+      "start_terminal": "21:43",
+      "return_park": "23:01",
+      "accumulated_hours": "07:59",
+      "norm_achieved": "норма достигнута"
+    },
+    {
+      "trip_number": 98,
+      "driver_id": 38,
+      "start_park": "20:36",
+      "arrival_terminal": "21:53",
+      "start_terminal": "21:54",
+      "return_park": "23:11",
+      "accumulated_hours": "05:41",
+      "norm_achieved": ""
+    },
+    {
+      "trip_number": 99,
+      "driver_id": 32,
+      "start_park": "20:48",
+      "arrival_terminal": "22:04",
+      "start_terminal": "22:05",
+      "return_park": "23:21",
+      "accumulated_hours": "08:05",
+      "norm_achieved": "норма достигнута"
+    },
+    {
+      "trip_number": 100,
+      "driver_id": 33,
+      "start_park": "21:00",
+      "arrival_terminal": "22:17",
+      "start_terminal": "22:18",
+      "return_park": "23:35",
+      "accumulated_hours": "08:07",
+      "norm_achieved": "норма достигнута"
+    },
+    {
+      "trip_number": 101,
+      "driver_id": 34,
+      "start_park": "21:12",
+      "arrival_terminal": "22:30",
+      "start_terminal": "22:31",
+      "return_park": "23:49",
+      "accumulated_hours": "08:07",
+      "norm_achieved": "норма достигнута"
+    },
+    {
+      "trip_number": 102,
+      "driver_id": 35,
+      "start_park": "21:24",
+      "arrival_terminal": "22:44",
+      "start_terminal": "22:47",
+      "return_park": "00:07",
+      "accumulated_hours": "08:13",
+      "norm_achieved": "норма достигнута"
+    },
+    {
+      "trip_number": 103,
+      "driver_id": 36,
+      "start_park": "21:36",
+      "arrival_terminal": "22:55",
+      "start_terminal": "22:58",
+      "return_park": "00:17",
+      "accumulated_hours": "08:09",
+      "norm_achieved": "норма достигнута"
+    },
+    {
+      "trip_number": 104,
+      "driver_id": 37,
+      "start_park": "21:48",
+      "arrival_terminal": "23:06",
+      "start_terminal": "23:08",
+      "return_park": "00:26",
+      "accumulated_hours": "08:05",
+      "norm_achieved": "норма достигнута"
+    },
+    {
+      "trip_number": 105,
+      "driver_id": 39,
+      "start_park": "22:00",
+      "arrival_terminal": "23:17",
+      "start_terminal": "23:20",
+      "return_park": "00:37",
+      "accumulated_hours": "07:00",
+      "norm_achieved": "норма достигнута"
+    },
+    {
+      "trip_number": 106,
+      "driver_id": 40,
+      "start_park": "22:12",
+      "arrival_terminal": "23:28",
+      "start_terminal": "23:31",
+      "return_park": "00:47",
+      "accumulated_hours": "06:59",
+      "norm_achieved": "норма достигнута"
+    },
+    {
+      "trip_number": 107,
+      "driver_id": 41,
+      "start_park": "22:24",
+      "arrival_terminal": "23:44",
+      "start_terminal": "23:47",
+      "return_park": "01:07",
+      "accumulated_hours": "07:13",
+      "norm_achieved": "норма достигнута"
+    },
+    {
+      "trip_number": 108,
+      "driver_id": 42,
+      "start_park": "22:36",
+      "arrival_terminal": "23:52",
+      "start_terminal": "23:54",
+      "return_park": "01:10",
+      "accumulated_hours": "07:03",
+      "norm_achieved": "норма достигнута"
+    },
+    {
+      "trip_number": 109,
+      "driver_id": 43,
+      "start_park": "22:48",
+      "arrival_terminal": "00:08",
+      "start_terminal": "00:11",
+      "return_park": "01:31",
+      "accumulated_hours": "07:06",
+      "norm_achieved": "норма достигнута"
+    },
+    {
+      "trip_number": 110,
+      "driver_id": 44,
+      "start_park": "23:00",
+      "arrival_terminal": "00:19",
+      "start_terminal": "00:21",
+      "return_park": "01:40",
+      "accumulated_hours": "07:10",
+      "norm_achieved": "норма достигнута"
+    }
+  ],
+  "worktime": [
+    {
+      "driver_id": 1,
+      "start_time": "04:48",
+      "end_time": "12:54",
+      "duration": "08:05",
+      "status": "норма достигнута",
+      "next_start": "00:54",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 2,
+      "start_time": "05:03",
+      "end_time": "13:15",
+      "duration": "08:11",
+      "status": "норма достигнута",
+      "next_start": "01:15",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 3,
+      "start_time": "05:18",
+      "end_time": "13:30",
+      "duration": "08:11",
+      "status": "норма достигнута",
+      "next_start": "01:30",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 4,
+      "start_time": "05:33",
+      "end_time": "14:13",
+      "duration": "08:39",
+      "status": "норма достигнута",
+      "next_start": "02:13",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 5,
+      "start_time": "05:48",
+      "end_time": "13:43",
+      "duration": "07:55",
+      "status": "норма достигнута",
+      "next_start": "01:43",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 6,
+      "start_time": "06:03",
+      "end_time": "13:55",
+      "duration": "07:51",
+      "status": "норма достигнута",
+      "next_start": "01:55",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 7,
+      "start_time": "06:18",
+      "end_time": "14:30",
+      "duration": "08:11",
+      "status": "норма достигнута",
+      "next_start": "02:30",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 8,
+      "start_time": "06:33",
+      "end_time": "14:39",
+      "duration": "08:05",
+      "status": "норма достигнута",
+      "next_start": "02:39",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 9,
+      "start_time": "06:48",
+      "end_time": "14:50",
+      "duration": "08:01",
+      "status": "норма достигнута",
+      "next_start": "02:50",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 10,
+      "start_time": "07:03",
+      "end_time": "15:08",
+      "duration": "08:05",
+      "status": "норма достигнута",
+      "next_start": "03:08",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 11,
+      "start_time": "07:18",
+      "end_time": "15:16",
+      "duration": "07:58",
+      "status": "норма достигнута",
+      "next_start": "03:16",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 12,
+      "start_time": "08:15",
+      "end_time": "15:44",
+      "duration": "07:29",
+      "status": "норма достигнута",
+      "next_start": "03:44",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 13,
+      "start_time": "08:21",
+      "end_time": "15:56",
+      "duration": "07:34",
+      "status": "норма достигнута",
+      "next_start": "03:56",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 14,
+      "start_time": "08:33",
+      "end_time": "16:13",
+      "duration": "07:40",
+      "status": "норма достигнута",
+      "next_start": "04:13",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 15,
+      "start_time": "08:45",
+      "end_time": "11:18",
+      "duration": "02:32",
+      "status": "недоработка",
+      "next_start": "23:18",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 16,
+      "start_time": "08:51",
+      "end_time": "11:27",
+      "duration": "02:36",
+      "status": "недоработка",
+      "next_start": "23:27",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 17,
+      "start_time": "08:57",
+      "end_time": "11:40",
+      "duration": "02:43",
+      "status": "недоработка",
+      "next_start": "23:40",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 18,
+      "start_time": "09:15",
+      "end_time": "15:33",
+      "duration": "06:17",
+      "status": "норма достигнута",
+      "next_start": "03:33",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 19,
+      "start_time": "09:21",
+      "end_time": "12:00",
+      "duration": "02:38",
+      "status": "недоработка",
+      "next_start": "00:00",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 20,
+      "start_time": "09:33",
+      "end_time": "12:12",
+      "duration": "02:38",
+      "status": "недоработка",
+      "next_start": "00:12",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 21,
+      "start_time": "09:45",
+      "end_time": "12:20",
+      "duration": "02:35",
+      "status": "недоработка",
+      "next_start": "00:20",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 22,
+      "start_time": "09:51",
+      "end_time": "12:30",
+      "duration": "02:38",
+      "status": "недоработка",
+      "next_start": "00:30",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 23,
+      "start_time": "10:03",
+      "end_time": "12:43",
+      "duration": "02:39",
+      "status": "недоработка",
+      "next_start": "00:43",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 24,
+      "start_time": "10:29",
+      "end_time": "13:05",
+      "duration": "02:36",
+      "status": "недоработка",
+      "next_start": "01:05",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 25,
+      "start_time": "13:44",
+      "end_time": "21:55",
+      "duration": "08:11",
+      "status": "норма достигнута",
+      "next_start": "09:55",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 26,
+      "start_time": "13:57",
+      "end_time": "22:05",
+      "duration": "08:07",
+      "status": "норма достигнута",
+      "next_start": "10:05",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 27,
+      "start_time": "14:10",
+      "end_time": "22:21",
+      "duration": "08:11",
+      "status": "норма достигнута",
+      "next_start": "10:21",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 28,
+      "start_time": "14:23",
+      "end_time": "22:23",
+      "duration": "08:00",
+      "status": "норма достигнута",
+      "next_start": "10:23",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 29,
+      "start_time": "14:36",
+      "end_time": "22:41",
+      "duration": "08:05",
+      "status": "норма достигнута",
+      "next_start": "10:41",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 30,
+      "start_time": "14:49",
+      "end_time": "22:46",
+      "duration": "07:57",
+      "status": "норма достигнута",
+      "next_start": "10:46",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 31,
+      "start_time": "15:02",
+      "end_time": "23:01",
+      "duration": "07:59",
+      "status": "норма достигнута",
+      "next_start": "11:01",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 32,
+      "start_time": "15:15",
+      "end_time": "23:21",
+      "duration": "08:05",
+      "status": "норма достигнута",
+      "next_start": "11:21",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 33,
+      "start_time": "15:28",
+      "end_time": "23:35",
+      "duration": "08:07",
+      "status": "норма достигнута",
+      "next_start": "11:35",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 34,
+      "start_time": "15:41",
+      "end_time": "23:49",
+      "duration": "08:07",
+      "status": "норма достигнута",
+      "next_start": "11:49",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 35,
+      "start_time": "15:54",
+      "end_time": "00:07",
+      "duration": "08:13",
+      "status": "норма достигнута",
+      "next_start": "12:07",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 36,
+      "start_time": "16:07",
+      "end_time": "00:17",
+      "duration": "08:09",
+      "status": "норма достигнута",
+      "next_start": "12:17",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 37,
+      "start_time": "16:20",
+      "end_time": "00:26",
+      "duration": "08:05",
+      "status": "норма достигнута",
+      "next_start": "12:26",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 38,
+      "start_time": "17:30",
+      "end_time": "23:11",
+      "duration": "05:41",
+      "status": "недоработка",
+      "next_start": "11:11",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 39,
+      "start_time": "17:36",
+      "end_time": "00:37",
+      "duration": "07:00",
+      "status": "норма достигнута",
+      "next_start": "12:37",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 40,
+      "start_time": "17:48",
+      "end_time": "00:47",
+      "duration": "06:59",
+      "status": "норма достигнута",
+      "next_start": "12:47",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 41,
+      "start_time": "17:54",
+      "end_time": "01:07",
+      "duration": "07:13",
+      "status": "норма достигнута",
+      "next_start": "13:07",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 42,
+      "start_time": "18:06",
+      "end_time": "01:10",
+      "duration": "07:03",
+      "status": "норма достигнута",
+      "next_start": "13:10",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 43,
+      "start_time": "18:24",
+      "end_time": "01:31",
+      "duration": "07:06",
+      "status": "норма достигнута",
+      "next_start": "13:31",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 44,
+      "start_time": "18:30",
+      "end_time": "01:40",
+      "duration": "07:10",
+      "status": "норма достигнута",
+      "next_start": "13:40",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 45,
+      "start_time": "18:42",
+      "end_time": "21:15",
+      "duration": "02:32",
+      "status": "недоработка",
+      "next_start": "09:15",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 46,
+      "start_time": "18:48",
+      "end_time": "21:22",
+      "duration": "02:34",
+      "status": "недоработка",
+      "next_start": "09:22",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 47,
+      "start_time": "19:06",
+      "end_time": "21:41",
+      "duration": "02:35",
+      "status": "недоработка",
+      "next_start": "09:41",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 48,
+      "start_time": "19:12",
+      "end_time": "21:50",
+      "duration": "02:38",
+      "status": "недоработка",
+      "next_start": "09:50",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 49,
+      "start_time": "19:24",
+      "end_time": "22:02",
+      "duration": "02:38",
+      "status": "недоработка",
+      "next_start": "10:02",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 50,
+      "start_time": "19:36",
+      "end_time": "22:17",
+      "duration": "02:40",
+      "status": "недоработка",
+      "next_start": "10:17",
+      "break_duration": "12:00"
+    },
+    {
+      "driver_id": 51,
+      "start_time": "19:54",
+      "end_time": "22:28",
+      "duration": "02:34",
+      "status": "недоработка",
+      "next_start": "10:28",
+      "break_duration": "12:00"
+    }
+  ],
+  "stats": {
+    "date_generated": "2025-11-11 00:27:35",
+    "num_drivers": 51,
+    "total_drives": 110,
+    "last_return_time": "01:40",
+    "start_time": "04:48",
+    "end_time": "01:34",
+    "min_norm_work": 6.0,
+    "max_norm_work": 10.0
+  }
+}
